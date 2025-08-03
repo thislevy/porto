@@ -1,3 +1,6 @@
+/* style2.css versi fix mobile */
+
+/* Warna tema gelap elegan */
 body {
   background: #1e2a38;
   color: white;
@@ -36,6 +39,7 @@ body {
   gap: 15px;
 }
 
+/* Tombol link */
 .link-btn {
   display: block;
   background: #314863;
@@ -47,27 +51,36 @@ body {
   transition: transform 0.2s ease, background 0.2s ease;
 }
 
+/* Hover animasi scale */
 .link-btn:hover {
   transform: scale(1.05);
   background: #3d5a7a;
 }
 
+/* Klik animasi scale kecil */
 .link-btn:active {
   transform: scale(0.97);
 }
 
+/* ===== Tambahan Responsif untuk Mobile ===== */
 @media (max-width: 600px) {
+  body {
+    align-items: flex-start; /* Tidak center vertikal */
+    padding-top: 40px;       /* Jarak atas */
+  }
+
   .container {
     max-width: 95%;
   }
 
   .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
   }
 
   .name {
     font-size: 1.8rem;
+    margin-bottom: 20px;
   }
 
   .link-btn {

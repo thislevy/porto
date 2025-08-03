@@ -1,6 +1,5 @@
-/* Warna tema gelap elegan */
 body {
-  background: #1e2a38; /* Biru dongker */
+  background: #1e2a38;
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
@@ -37,7 +36,6 @@ body {
   gap: 15px;
 }
 
-/* Tombol link */
 .link-btn {
   display: block;
   background: #314863;
@@ -49,13 +47,31 @@ body {
   transition: transform 0.2s ease, background 0.2s ease;
 }
 
-/* Hover animasi scale */
 .link-btn:hover {
   transform: scale(1.05);
   background: #3d5a7a;
 }
 
-/* Klik animasi scale kecil */
 .link-btn:active {
   transform: scale(0.97);
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 95%;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  .name {
+    font-size: 1.8rem;
+  }
+
+  .link-btn {
+    padding: 18px 25px;
+    font-size: 1.1rem;
+  }
 }
